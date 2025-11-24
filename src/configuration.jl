@@ -27,19 +27,19 @@ This is the only file that should be modified by the user.
 #=
     Number of total cores in the optimizaiton process.
 =#
-N_CORES = 1
+# N_CORES = 1
 # N_CORES = 2
 # N_CORES = 4
-# N_CORES = 8
+ N_CORES = 8
 # N_CORES = 64 # recommended for large cases
 
 #=
     Case data
     - name of the case (matpower .m) files from "data" folder
 =#
-CASE_NAME = "pglib_opf_case24_ieee_rts" # example
+# CASE_NAME = "pglib_opf_case24_ieee_rts" # example
 # CASE_NAME = "simple_case1" # (Secs 8.3, 8.4)
-# CASE_NAME = "pglib_opf_case6468_rte" # (Sec 8.5)
+ CASE_NAME = "pglib_opf_case6468_rte" # (Sec 8.5)
 # CASE_NAME = "pglib_opf_case6470_rte" # (Secs 8.5 and 8.6)
 # CASE_NAME = "pglib_opf_case6495_rte" # (Sec 8.5)
 # CASE_NAME = "pglib_opf_case6515_rte" # (Sec 8.5)
@@ -67,8 +67,8 @@ EXACT_BILEVEL = false # default
 #=
     Solver for optimization subproblems
 =#
- SOLVER = "HiGHS" # example
-# SOLVER = "Gurobi" #
+# SOLVER = "HiGHS" # example
+ SOLVER = "Gurobi" #
 # SOLVER = "Xpress" #
 
 #=
@@ -163,8 +163,8 @@ SPILL_COEF = 3.0 # default
     - else
     Is is passed directly to the MIP solver by BilevelJuMP
 =#
-SOLVE_TIME_LIMIT = 120.0 # example
-# SOLVE_TIME_LIMIT = 1800.0 # default
+# SOLVE_TIME_LIMIT = 120.0 # example
+ SOLVE_TIME_LIMIT = 1800.0 # default
 # SOLVE_TIME_LIMIT = 7200.0 # exact bilevel
 
 
